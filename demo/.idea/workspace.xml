@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5931f4e-93ba-49c9-8063-55f8fc02363d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/.idea/LV08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/.idea/LV08.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/.idea/Z1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/.idea/Z1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z1/tostring za osobu odvojeno zarezima.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak1/tostring za osobu odvojeno zarezima.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/java/com/example/z2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/java/com/example/z2/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/java/com/example/z2/controller/PredmetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/java/com/example/z2/controller/PredmetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/java/com/example/z2/model/Predmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/java/com/example/z2/model/Predmet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/java/com/example/z2/repository/PredmetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/java/com/example/z2/repository/PredmetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/resources/com/example/z2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/resources/com/example/z2/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LV08/LV08/Z2/src/main/resources/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../LV08/LV08/zadatak2/src/main/resources/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Predmet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Predmet/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Predmet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Predmet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Predmet/src/main/java/com/example/predmet/controller/PredmetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Predmet/src/main/java/com/example/predmet/controller/PredmetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Predmet/src/main/java/com/example/predmet/model/PredmetModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Predmet/src/main/java/com/example/predmet/model/PredmetModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lv07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lv07/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "avelic5"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/avelic5/RPR-2024-2025-Aldin-Velic.git",
+    "accountId": "9d863bfb-d278-4d09-ac9b-d100007af9be"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2qvwXQDmuCXRTv074gwYh79SXKC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "LV08",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5931f4e-93ba-49c9-8063-55f8fc02363d" name="Changes" comment="" />
+      <created>1735556395422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735556395422</updated>
+    </task>
+    <servers />
+  </component>
+</project>
