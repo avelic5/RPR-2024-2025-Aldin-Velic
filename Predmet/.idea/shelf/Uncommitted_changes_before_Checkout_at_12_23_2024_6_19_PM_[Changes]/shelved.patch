@@ -1,0 +1,32 @@
+Index: src/main/java/module-info.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module com.example.predmet {\r\n    requires javafx.controls;\r\n    requires javafx.fxml;\r\n\r\n    requires org.controlsfx.controls;\r\n    requires org.kordamp.bootstrapfx.core;\r\n\r\n    opens com.example.predmet to javafx.fxml;\r\n    exports com.example.predmet;\r\n}
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+--- a/src/main/java/module-info.java	(revision 01afd652f344f6db2803ca204ac88de0b5917d46)
++++ b/src/main/java/module-info.java	(date 1734789600669)
+@@ -4,6 +4,7 @@
+ 
+     requires org.controlsfx.controls;
+     requires org.kordamp.bootstrapfx.core;
++    requires javafx.base;
+ 
+     opens com.example.predmet to javafx.fxml;
+     exports com.example.predmet;
+Index: ../lv07/src/test/java/com/example/lv07/model/OsobaModelTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.lv07.model;\r\n\r\nimport org.junit.jupiter.api.BeforeEach;\r\nimport org.junit.jupiter.api.Test;\r\nimport javafx.collections.ObservableList;\r\n\r\nimport java.text.ParseException;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Date;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\nclass OsobaModelTest {\r\n\r\n    private OsobaModel osobaModel;\r\n    private SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd\");\r\n\r\n    @BeforeEach\r\n    void setUp() {\r\n        osobaModel = new OsobaModel();\r\n        osobaModel.napuni();\r\n    }\r\n\r\n    @Test\r\n    void testNapuni() {\r\n        ObservableList<Osoba> osobe = osobaModel.dajSveOsobe();\r\n        assertEquals(2, osobe.size(), \"Broj osoba nakon punjenja treba biti 2.\");\r\n        assertEquals(\"Neko\", osobe.get(0).getIme(), \"Ime prve osobe nije ispravno.\");\r\n        assertEquals(\"Neko 2\", osobe.get(1).getIme(), \"Ime druge osobe nije ispravno.\");\r\n    }\r\n\r\n    @Test\r\n    void testAzurirajOsobu_Success() throws ParseException {\r\n        // Postavi validne vrijednosti koje se podudaraju s validacijom matičnog broja\r\n        Date noviDatum = dateFormat.parse(\"1997-08-25\");\r\n        String noviMaticniBroj = \"2508977123456\"; // Validan JMBG za datum 25.08.1997.\r\n\r\n        String rezultat = osobaModel.azurirajOsobu(1, \"NovoIme\", \"NovoPrezime\", \"NovaAdresa\", noviDatum, noviMaticniBroj, Uloga.NASTAVNO_OSOBLJE);\r\n\r\n        assertEquals(\"Osoba je uspjesno azurirana!\", rezultat, \"Poruka nakon uspješnog ažuriranja nije ispravna.\");\r\n\r\n        Osoba azuriranaOsoba = osobaModel.dajOsobuPoId(1);\r\n        assertNotNull(azuriranaOsoba, \"Osoba sa ID 1 treba postojati.\");\r\n        assertEquals(\"NovoIme\", azuriranaOsoba.getIme(), \"Ime nije ispravno ažurirano.\");\r\n        assertEquals(\"NovoPrezime\", azuriranaOsoba.getPrezime(), \"Prezime nije ispravno ažurirano.\");\r\n        assertEquals(\"NovaAdresa\", azuriranaOsoba.getAdresa(), \"Adresa nije ispravno ažurirana.\");\r\n        assertEquals(noviDatum, azuriranaOsoba.getDatumRodjenja(), \"Datum rođenja nije ispravno ažuriran.\");\r\n        assertEquals(noviMaticniBroj, azuriranaOsoba.getMaticniBroj(), \"Matični broj nije ispravno ažuriran.\");\r\n        assertEquals(Uloga.NASTAVNO_OSOBLJE, azuriranaOsoba.getUloga(), \"Uloga nije ispravno ažurirana.\");\r\n    }\r\n\r\n    @Test\r\n    void testAzurirajOsobu_NotFound() {\r\n        String rezultat = osobaModel.azurirajOsobu(999, \"NovoIme\", null, null, null, null, null);\r\n        assertEquals(\"Osoba nije pronadjena!\", rezultat, \"Poruka za nepostojeću osobu nije ispravna.\");\r\n    }\r\n\r\n    @Test\r\n    void testDodajOsobu_Success() throws ParseException {\r\n        Date datumRodjenja = dateFormat.parse(\"2000-05-15\");\r\n        String maticniBroj = \"1505000123456\"; // Validan JMBG za 15.05.2000.\r\n\r\n        String rezultat = osobaModel.dodajOsobu(3, \"NovaOsoba\", \"Prezime\", \"Adresa\", datumRodjenja, maticniBroj, Uloga.STUDENT);\r\n        assertEquals(\"Osoba je uspjesno dodana!\", rezultat, \"Poruka nakon dodavanja osobe nije ispravna.\");\r\n\r\n        Osoba novaOsoba = osobaModel.dajOsobuPoId(3);\r\n        assertNotNull(novaOsoba, \"Nova osoba sa ID 3 treba postojati.\");\r\n        assertEquals(\"NovaOsoba\", novaOsoba.getIme(), \"Ime nove osobe nije ispravno.\");\r\n        assertEquals(maticniBroj, novaOsoba.getMaticniBroj(), \"Matični broj nove osobe nije ispravan.\");\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/../lv07/src/test/java/com/example/lv07/model/OsobaModelTest.java b/../lv07/src/test/java/com/example/lv07/model/OsobaModelTest.java
+--- a/../lv07/src/test/java/com/example/lv07/model/OsobaModelTest.java	(revision 01afd652f344f6db2803ca204ac88de0b5917d46)
++++ b/../lv07/src/test/java/com/example/lv07/model/OsobaModelTest.java	(date 1734789449975)
+@@ -7,6 +7,7 @@
+ import java.text.ParseException;
+ import java.text.SimpleDateFormat;
+ import java.util.Date;
++import com. example. lv07.model. OsobaModel;
+ 
+ import static org.junit.jupiter.api.Assertions.*;
+ 
