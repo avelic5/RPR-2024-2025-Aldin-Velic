@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b72973eb-cf8a-40ef-82ce-3a836918e6c9" name="Changes" comment="Uradjen drugi zadatak prve LV">
+      <change afterPath="$PROJECT_DIR$/../Zadatak1LV02/src/Izuzeci/PremladStudentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zadatak1LV02/src/Izuzeci/StudentBuducnostException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zadatak1LV02/src/Klase/Odsjek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zadatak1LV02/src/Klase/Student.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;avelic5&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/avelic5/RPR-2024-2025-Aldin-Velic&quot;,
+    &quot;accountId&quot;: &quot;9d863bfb-d278-4d09-ac9b-d100007af9be&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nqKW2S2Qv9wtbPQLEERvv86feQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "LV02",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/bombi/IdeaProjects/RPR-2024-2025-Aldin-Velic/Zadatak2/src/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b72973eb-cf8a-40ef-82ce-3a836918e6c9" name="Changes" comment="" />
+      <created>1729695194491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729695194491</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Uradjen prvi zadatak prve LV">
+      <option name="closed" value="true" />
+      <created>1729697394412</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729697394412</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Uradjen drugi zadatak prve LV">
+      <option name="closed" value="true" />
+      <created>1729697536325</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729697536325</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Uradjen prvi zadatak prve LV" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/LV01' into LV01" />
+    <MESSAGE value="Uradjen drugi zadatak prve LV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uradjen drugi zadatak prve LV" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
