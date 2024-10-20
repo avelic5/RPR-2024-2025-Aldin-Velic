@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_191" class="java.beans.XMLDecoder">
+ <object class="ba.unsa.etf.rpr.predavanje17.Fakultet" id="Fakultet0">
+  <void property="studenti">
+   <void method="add">
+    <object class="ba.unsa.etf.rpr.predavanje17.Student">
+     <void property="brojIndexa">
+      <int>12345</int>
+     </void>
+     <void property="ime">
+      <string>Meho</string>
+     </void>
+     <void property="prezime">
+      <string>Mehic</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ba.unsa.etf.rpr.predavanje17.Student">
+     <void property="brojIndexa">
+      <int>12346</int>
+     </void>
+     <void property="ime">
+      <string>Pero</string>
+     </void>
+     <void property="prezime">
+      <string>Peric</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ba.unsa.etf.rpr.predavanje17.Student">
+     <void property="brojIndexa">
+      <int>23451</int>
+     </void>
+     <void property="ime">
+      <string>Sara</string>
+     </void>
+     <void property="prezime">
+      <string>Sarac</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,28 @@
+Index: src/model/Predmet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package model;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.FileReader;\r\nimport java.io.IOException;\r\nimport java.text.ParseException;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.ArrayList;\r\nimport java.util.Date;\r\nimport java.util.List;\r\n\r\npublic class Predmet {\r\n    private String naziv;\r\n    private Double ECTS;\r\n    private static final SimpleDateFormat dateFormat = new\r\n            SimpleDateFormat(\"yyyy-MM-dd\");\r\n\r\n    public Double getECTS() {\r\n        return ECTS;\r\n    }\r\n\r\n    public void setECTS(Double ECTS) {\r\n        if(ECTS<5.0||ECTS>20.0)throw new IllegalArgumentException(\"GR\");\r\n       if((ECTS*10)%10!=0&&(ECTS*10)%10!=5)throw new IllegalArgumentException(\"GR\");\r\n        this.ECTS = ECTS;\r\n    }\r\n\r\n    public String getNaziv() {\r\n        return naziv;\r\n    }\r\n\r\n    public void setNaziv(String naziv) {\r\n        if(naziv.length()<5||naziv.length()>100)throw new IllegalArgumentException(\"GR\");\r\n\r\n        this.naziv = naziv;\r\n    }\r\n\r\n    public Predmet(Double ECTS, String naziv) {\r\n        setECTS(ECTS);\r\n        setNaziv(naziv);\r\n    }\r\n\r\n    public static List<Predmet> ucitajPredmeteIzTxtDatoteke(String putanjaDoDatoteke) throws IOException, ParseException {\r\n        List<Predmet> predmeti = new ArrayList<>();\r\n        BufferedReader reader = new BufferedReader(new FileReader(putanjaDoDatoteke));\r\n        String linija;\r\n        while ((linija = reader.readLine()) != null) {\r\n            String[] polja = linija.split(\",\");\r\n            if (polja.length == 2) {\r\n                Double ECTS = Double.parseDouble(polja[1]);\r\n                String naziv = polja[0];\r\n               Predmet predmet=new Predmet(ECTS,naziv);\r\n                predmeti.add(predmet);\r\n            }\r\n        }\r\n        reader.close();\r\n        return predmeti;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"Predmet{\" +\r\n                \"ECTS=\" + ECTS +\r\n                \", naziv='\" + naziv + '\\'' +\r\n                '}';\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/model/Predmet.java b/src/model/Predmet.java
+--- a/src/model/Predmet.java	(revision 711896bc3e1d86e106b51acc123bb57a1a037711)
++++ b/src/model/Predmet.java	(date 1734187726670)
+@@ -8,6 +8,7 @@
+ import java.util.ArrayList;
+ import java.util.Date;
+ import java.util.List;
++import java.util.Scanner;
+ 
+ public class Predmet {
+     private String naziv;
+@@ -42,9 +43,9 @@
+ 
+     public static List<Predmet> ucitajPredmeteIzTxtDatoteke(String putanjaDoDatoteke) throws IOException, ParseException {
+         List<Predmet> predmeti = new ArrayList<>();
+-        BufferedReader reader = new BufferedReader(new FileReader(putanjaDoDatoteke));
++        Scanner reader = new Scanner(new FileReader(putanjaDoDatoteke));
+         String linija;
+-        while ((linija = reader.readLine()) != null) {
++        while ((linija = reader.nextLine()) != null) {
+             String[] polja = linija.split(",");
+             if (polja.length == 2) {
+                 Double ECTS = Double.parseDouble(polja[1]);
