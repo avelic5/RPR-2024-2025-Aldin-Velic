@@ -1,0 +1,3 @@
+public enum VrstaMesa {
+    PILETINA,PURETINA,TELETINA,JANJETINA;
+};
