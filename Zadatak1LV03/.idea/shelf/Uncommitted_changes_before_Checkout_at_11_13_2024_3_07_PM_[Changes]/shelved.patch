@@ -1,0 +1,74 @@
+Index: src/Prodavac.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import BazneKlase.IInterfejs;\r\n\r\npublic class Prodavac implements IInterfejs {\r\n    private String ime,prezime;\r\n    int brojStanda,iDLicence;\r\n\r\n    public Prodavac(int brojStanda, int iDLicence, String ime, String prezime) {\r\n        this.brojStanda = brojStanda;\r\n        this.iDLicence = iDLicence;\r\n        this.ime = ime;\r\n        this.prezime = prezime;\r\n    }\r\n\r\n    public int getBrojStanda() {\r\n        return brojStanda;\r\n    }\r\n\r\n    public void setBrojStanda(int brojStanda) {\r\n        this.brojStanda = brojStanda;\r\n    }\r\n\r\n    public int getiDLicence() {\r\n        return iDLicence;\r\n    }\r\n\r\n    public void setiDLicence(int iDLicence) {\r\n        this.iDLicence = iDLicence;\r\n    }\r\n\r\n    public String getIme() {\r\n        return ime;\r\n    }\r\n\r\n    public void setIme(String ime) {\r\n        this.ime = ime;\r\n    }\r\n\r\n    public String getPrezime() {\r\n        return prezime;\r\n    }\r\n\r\n    public void setPrezime(String prezime) {\r\n        this.prezime = prezime;\r\n    }\r\n\r\n    @Override\r\n    public boolean Zdravlje() {\r\n        if(getiDLicence()%100==1)return true;\r\n        return false;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/Prodavac.java b/src/Prodavac.java
+--- a/src/Prodavac.java	(revision 05cdc133af66c603bae0e4c49fda7ac7963cacd2)
++++ b/src/Prodavac.java	(date 1731428029916)
+@@ -4,10 +4,10 @@
+     private String ime,prezime;
+     int brojStanda,iDLicence;
+ 
+-    public Prodavac(int brojStanda, int iDLicence, String ime, String prezime) {
++    public Prodavac(int brojStanda, int iDLicence, String ime2, String prezime) {
+         this.brojStanda = brojStanda;
+         this.iDLicence = iDLicence;
+-        this.ime = ime;
++        ime = ime2;
+         this.prezime = prezime;
+     }
+ 
+Index: Zadatak1LV03.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+===================================================================
+diff --git a/Zadatak1LV03.iml b/Zadatak1LV03.iml
+--- a/Zadatak1LV03.iml	(revision 05cdc133af66c603bae0e4c49fda7ac7963cacd2)
++++ b/Zadatak1LV03.iml	(date 1731425737533)
+@@ -3,9 +3,43 @@
+   <component name="NewModuleRootManager" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" generated="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module-library">
++      <library name="JUnit5.8.1">
++        <CLASSES>
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
++    <orderEntry type="module-library" scope="TEST">
++      <library name="JUnit5.8.1">
++        <CLASSES>
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
+   </component>
+ </module>
+\ No newline at end of file

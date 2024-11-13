@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6b78b35-c183-4c4e-aad1-dc5693dc63e3" name="Changes" comment="uradjen prvi zadatak lv03">
+      <change afterPath="$PROJECT_DIR$/src/BazneKlase/Hrana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BazneKlase/IInterfejs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Meso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Povrce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prodavac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Voce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VrstaMesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadatak1LV03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Zadatak1LV03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadatak1LV03/Zadatak1LV03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BazneKlase/HranaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BazneKlase/HranaTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Aldin Velić &lt;avelic5@etf.unsa.ba&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="LV03" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;avelic5&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/avelic5/RPR-2024-2025-Aldin-Velic&quot;,
+    &quot;accountId&quot;: &quot;9d863bfb-d278-4d09-ac9b-d100007af9be&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2oLzDwPxYh3ljBRpx23iZl9lMqP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.All in Zadatak1LV03.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ProdavacTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdavacTest.zdravlje.executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LV04&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/bombi/IdeaProjects/RPR-2024-2025-Aldin-Velic/Zadatak1LV03/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bombi\IdeaProjects\RPR-2024-2025-Aldin-Velic\Zadatak1LV03\src\BazneKlase" />
+      <recent name="C:\Users\bombi\IdeaProjects\RPR-2024-2025-Aldin-Velic\Zadatak1LV03\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="BazneKlase" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Zadatak1LV03">
+    <configuration name="All in Zadatak1LV03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Zadatak1LV03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdavacTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Zadatak1LV03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProdavacTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdavacTest.zdrav" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Zadatak1LV03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProdavacTest" />
+      <option name="METHOD_NAME" value="zdrav" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Zadatak1LV03" />
+        <item itemvalue="JUnit.ProdavacTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6b78b35-c183-4c4e-aad1-dc5693dc63e3" name="Changes" comment="" />
+      <created>1730663529311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730663529311</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730668219594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668219594</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730668288196</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668288196</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730668353081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668353081</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730668431239</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668431239</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730668586015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668586015</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Uspjsno uradjen prvi zadatak LV03">
+      <option name="closed" value="true" />
+      <created>1730669080972</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730669080972</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/LV03' into LV03">
+      <option name="closed" value="true" />
+      <created>1730669554462</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730669554462</updated>
+    </task>
+    <task id="LOCAL-00008" summary="uradjen prvi zadatak lv03">
+      <option name="closed" value="true" />
+      <created>1730904269839</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730904269839</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Uspjsno uradjen prvi zadatak LV03" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/LV03' into LV03" />
+    <MESSAGE value="uradjen prvi zadatak lv03" />
+    <option name="LAST_COMMIT_MESSAGE" value="uradjen prvi zadatak lv03" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/out/production/Zadatak1LV03/Main.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Zadatak1LV03$ProdavacTest.ic" NAME="ProdavacTest Coverage Results" MODIFIED="1731428500640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Zadatak1LV03$All_in_Zadatak1LV03.ic" NAME="All in Zadatak1LV03 Coverage Results" MODIFIED="1731433526422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
