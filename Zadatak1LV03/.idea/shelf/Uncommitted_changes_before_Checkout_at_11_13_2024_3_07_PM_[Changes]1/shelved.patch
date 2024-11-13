@@ -1,0 +1,366 @@
+Index: test/VoceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/VoceTest.java b/test/VoceTest.java
+new file mode 100644
+--- /dev/null	(date 1731432737045)
++++ b/test/VoceTest.java	(date 1731432737045)
+@@ -0,0 +1,70 @@
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++import static org.junit.jupiter.api.Assertions.*;
++
++import java.util.TreeMap;
++
++class VoceTest {
++
++    private Voce voce;
++    private TreeMap<String, Double> nutritivneVrijednosti;
++
++    @BeforeEach
++    void setUp() {
++        nutritivneVrijednosti = new TreeMap<>();
++        nutritivneVrijednosti.put("Vitamin C", 20.0);
++        nutritivneVrijednosti.put("Šećer", 25.0);
++        nutritivneVrijednosti.put("Vlakna", 4.0);
++
++        voce = new Voce("Malus domestica", "Hrvatska", nutritivneVrijednosti);
++    }
++
++    @Test
++    void getLatinskiNaziv() {
++        assertEquals("Malus domestica", voce.getLatinskiNaziv());
++    }
++
++    @Test
++    void setLatinskiNaziv() {
++        voce.setLatinskiNaziv("Citrus sinensis");
++        assertEquals("Citrus sinensis", voce.getLatinskiNaziv());
++    }
++
++    @Test
++    void getZemljaPorijekla() {
++        assertEquals("Hrvatska", voce.getZemljaPorijekla());
++    }
++
++    @Test
++    void setZemljaPorijekla() {
++        voce.setZemljaPorijekla("Španija");
++        assertEquals("Španija", voce.getZemljaPorijekla());
++    }
++
++    @Test
++    void getNutritivneVrijednosti() {
++        assertEquals(nutritivneVrijednosti, voce.getNutritivneVrijednosti());
++    }
++
++    @Test
++    void setNutritivneVrijednosti() {
++        TreeMap<String, Double> noveVrijednosti = new TreeMap<>();
++        noveVrijednosti.put("Antioksidanti", 15.0);
++        voce.setNutritivneVrijednosti(noveVrijednosti);
++        assertEquals(noveVrijednosti, voce.getNutritivneVrijednosti());
++    }
++
++    @Test
++    void dajBrojKalorija() {
++        assertEquals(49.0, voce.DajBrojKalorija());
++    }
++
++    @Test
++    void zdravlje() {
++        voce.setKoeficijentZdravlja(0.8); // Pretpostavljamo da postoji setter ili metoda za postavljanje koeficijenta zdravlja
++        assertTrue(voce.Zdravlje());
++
++        voce.setKoeficijentZdravlja(0.7);
++        assertFalse(voce.Zdravlje());
++    }
++}
+Index: test/PovrceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/PovrceTest.java b/test/PovrceTest.java
+new file mode 100644
+--- /dev/null	(date 1731432577348)
++++ b/test/PovrceTest.java	(date 1731432577348)
+@@ -0,0 +1,71 @@
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++import static org.junit.jupiter.api.Assertions.*;
++
++import java.util.TreeMap;
++
++class PovrceTest {
++
++    private Povrce povrce;
++    private TreeMap<String, Double> nutritivneVrijednosti;
++
++    @BeforeEach
++    void setUp() {
++        nutritivneVrijednosti = new TreeMap<>();
++        nutritivneVrijednosti.put("Protein", 30.0);
++        nutritivneVrijednosti.put("Ugljikohidrati", 50.0);
++        nutritivneVrijednosti.put("Masti", 10.0);
++
++        povrce = new Povrce("Solanum lycopersicum", "Italija", nutritivneVrijednosti);
++    }
++
++    @Test
++    void getLatinskiNaziv() {
++        assertEquals("Solanum lycopersicum", povrce.getLatinskiNaziv());
++    }
++
++    @Test
++    void setLatinskiNaziv() {
++        povrce.setLatinskiNaziv("Brassica oleracea");
++        assertEquals("Brassica oleracea", povrce.getLatinskiNaziv());
++    }
++
++    @Test
++    void getZemljaPorijekla() {
++        assertEquals("Italija", povrce.getZemljaPorijekla());
++    }
++
++    @Test
++    void setZemljaPorijekla() {
++        povrce.setZemljaPorijekla("Španija");
++        assertEquals("Španija", povrce.getZemljaPorijekla());
++    }
++
++    @Test
++    void getNutritivneVrijednosti() {
++        assertEquals(nutritivneVrijednosti, povrce.getNutritivneVrijednosti());
++    }
++
++    @Test
++    void setNutritivneVrijednosti() {
++        TreeMap<String, Double> novaVrijednost = new TreeMap<>();
++        novaVrijednost.put("Vlakna", 5.0);
++        povrce.setNutritivneVrijednosti(novaVrijednost);
++        assertEquals(novaVrijednost, povrce.getNutritivneVrijednosti());
++    }
++
++    @Test
++    void dajBrojKalorija() {
++        assertEquals(90.0, povrce.DajBrojKalorija());
++    }
++
++    @Test
++    void zdravlje() {
++        // Pretpostavljamo da metoda getKoeficijentZdravlja vraća vrijednost 0.6 za ovaj test
++        povrce.setKoeficijentZdravlja(0.6); // Postavi odgovarajuću vrijednost koeficijenta
++        assertTrue(povrce.Zdravlje());
++
++        povrce.setKoeficijentZdravlja(0.8);
++        assertFalse(povrce.Zdravlje());
++    }
++}
+Index: test/BazneKlase/HranaTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/BazneKlase/HranaTest.java b/test/BazneKlase/HranaTest.java
+new file mode 100644
+--- /dev/null	(date 1731451144752)
++++ b/test/BazneKlase/HranaTest.java	(date 1731451144752)
+@@ -0,0 +1,28 @@
++package BazneKlase;
++
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++public class HranaTest {
++
++
++    @BeforeEach
++    void setUp() {
++        Hrana h=new Voce(123,12);
++    }
++
++    @Test
++    void getKoeficijentZdravlja() {
++    }
++
++    @Test
++    void setKoeficijentZdravlja() {
++    }
++
++    @Test
++    void getBrojKalorija() {
++    }
++
++    @Test
++    void setBrojKalorija() {
++    }
++}
+\ No newline at end of file
+Index: test/ProdavacTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/ProdavacTest.java b/test/ProdavacTest.java
+new file mode 100644
+--- /dev/null	(date 1731432562206)
++++ b/test/ProdavacTest.java	(date 1731432562206)
+@@ -0,0 +1,65 @@
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++public class ProdavacTest {
++    Prodavac p1;
++
++    @BeforeEach
++    void beforeAll() {
++        p1=new Prodavac(1234,1100,"Mujo","Mujic");
++
++    }
++
++
++    @Test
++    void getBrojStanda() {
++        assertEquals(p1.getBrojStanda(),1234);
++    }
++
++    @Test
++    void setBrojStanda() {
++        p1.setBrojStanda(3123);
++        assertEquals(p1.getBrojStanda(),3123);
++    }
++
++    @Test
++    void getiDLicence() {
++        assertEquals(p1.getiDLicence(),1100);
++    }
++
++    @Test
++    void setiDLicence() {
++        p1.setiDLicence(3123);
++        assertEquals(p1.getiDLicence(),3123);
++    }
++
++    @Test
++    void getIme() {
++        assertEquals(p1.getIme(),"Mujo");
++    }
++
++    @Test
++    void setIme() {
++        p1.setIme("Aldin");
++        assertEquals(p1.getIme(),"Aldin");
++    }
++
++    @Test
++    void getPrezime() {
++        assertEquals(p1.getPrezime(),"Mujic");
++    }
++
++    @Test
++    void setPrezime() {
++        p1.setPrezime("Velic");
++        assertEquals(p1.getPrezime(),"Velic");
++    }
++
++    @Test
++    void zdravlje() {
++        assertFalse(p1.Zdravlje());
++    }
++}
+\ No newline at end of file
+Index: test/MesoTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/MesoTest.java b/test/MesoTest.java
+new file mode 100644
+--- /dev/null	(date 1731433523804)
++++ b/test/MesoTest.java	(date 1731433523804)
+@@ -0,0 +1,79 @@
++import com.sun.source.tree.Tree;
++import org.junit.jupiter.api.AfterEach;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++
++import java.util.Map;
++import java.util.TreeMap;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class MesoTest {
++
++    Meso piletina;
++
++    @BeforeEach
++    void setUp() {
++        TreeMap<String,Double>m=new TreeMap<>();
++        m.put("Cuker",23.);
++        m.put("Proteini",54.);
++      piletina=new Meso(VrstaMesa.PILETINA,"BiH",m);
++    }
++
++
++
++    @Test
++    void getVrsta() {
++        assertEquals(VrstaMesa.PILETINA,piletina.getVrsta());
++
++
++    }
++
++    @Test
++    void setVrsta() {
++        piletina.setVrsta(VrstaMesa.JANJETINA);
++        assertEquals(VrstaMesa.JANJETINA,piletina.getVrsta());
++    }
++
++    @Test
++    void getZemljaPorijekla() {
++        assertEquals(piletina.getZemljaPorijekla(),"BiH");
++    }
++
++    @Test
++    void setZemljaPorijekla() {
++        piletina.setZemljaPorijekla("Hrvatska");
++        assertEquals(piletina.getZemljaPorijekla(),"Hrvatska");
++    }
++
++    @Test
++    void getNutritivneVrijednosti() {
++        var provjera=piletina.getNutritivneVrijednosti();
++       assertEquals(provjera,piletina.getNutritivneVrijednosti());
++
++    }
++
++    @Test
++    void setNutritivneVrijednosti() {
++        TreeMap<String,Double> provjera=new TreeMap<>();
++        provjera.put("Cuker2",31.);
++        provjera.put("Proteini2",54.);
++        piletina.setNutritivneVrijednosti(provjera);
++       assertEquals(piletina.getNutritivneVrijednosti(),provjera);
++    }
++
++    @Test
++    void dajBrojKalorija() {
++
++        assertEquals(piletina.DajBrojKalorija(),1.2*77);
++    }
++
++    @Test
++    void zdravlje() {
++        piletina.setKoeficijentZdravlja(0.8);
++        assertFalse(piletina.Zdravlje());
++
++        ;
++    }
++}
+\ No newline at end of file

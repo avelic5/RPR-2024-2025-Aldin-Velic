@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c026e777-ba27-4fad-bfa3-c9f12e021a62" name="Changes" comment="Uradjen prvi zadatak druge LV">
+      <change afterPath="$PROJECT_DIR$/../Vjezba/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zadatak1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Zadatak1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="Exception" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;avelic5&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/avelic5/RPR-2024-2025-Aldin-Velic&quot;,
+    &quot;accountId&quot;: &quot;9d863bfb-d278-4d09-ac9b-d100007af9be&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2nyZhZn6hI5Svaqaif1m8QAEMs8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "LV03",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/bombi/IdeaProjects/RPR-2024-2025-Aldin-Velic/Zadatak1LV02/src/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c026e777-ba27-4fad-bfa3-c9f12e021a62" name="Changes" comment="" />
+      <created>1729947396992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729947396992</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Uradjen prvi zadatak druge LV">
+      <option name="closed" value="true" />
+      <created>1729950897183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729950897183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Uradjen prvi zadatak druge LV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uradjen prvi zadatak druge LV" />
+  </component>
+</project>
