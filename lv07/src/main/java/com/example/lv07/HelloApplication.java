@@ -12,16 +12,24 @@ import java.io.IOException;
 
 public class  HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException
+    {
+        OsobaModel osobaModel = new OsobaModel();
+
+
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        fxmlLoader.setController(new OsobaController(osobaModel));
+
+
+        Scene scene = new Scene(fxmlLoader.load(), 300, 700);
+        stage.setTitle("Dodaj osobu!");
         stage.setScene(scene);
         stage.show();
     }
 
+
     public static void main(String[] args) {
-        //launch();
+        launch();
         OsobaModel osobaModel = new OsobaModel();
         osobaModel.napuni();
 
@@ -30,7 +38,7 @@ public class  HelloApplication extends Application {
         osobaView.setUlazniTekst("Novo ime");
 
 
-        OsobaController osobaController = new OsobaController(osobaModel, osobaView);
+        OsobaController osobaController = new OsobaController(osobaModel);
         osobaController.azurirajIme(1);
 
 
@@ -38,11 +46,6 @@ public class  HelloApplication extends Application {
         System.out.println("   Azurirana osoba je: " + osobaController.dajOsobuPoId(1).toString());
 
 
-        osobaController.dajOsobeIzTxtDatoteke("src/data/osobe.txt");
-        System.out.println("2) View ispisuje: " + osobaView.getPoruka());
 
-
-        osobaController.dajOsobeIzXmlDatoteke("src/data/osobe.xml");
-        System.out.println("3) View ispisuje: " + osobaView.getPoruka());
     }
 }
