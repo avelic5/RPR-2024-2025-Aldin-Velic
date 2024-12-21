@@ -113,15 +113,7 @@ public class Osoba {
     }
 
     public void setMaticniBroj(String maticniBroj) {
-        if (maticniBroj != null && !maticniBroj.trim().isEmpty() && maticniBroj.length() == 13) {
-            if (!this.ProvjeriMaticniBroj(maticniBroj)) {
-                throw new IllegalArgumentException("Maticni broj se ne poklapa sa datumom rodjenja!");
-            } else {
-                this.maticniBroj.set(maticniBroj);
-            }
-        } else {
-            throw new IllegalArgumentException("Maticni broj mora imati tacno 13 karaktera!");
-        }
+        this.maticniBroj.set(maticniBroj);
     }
 
     public Uloga getUloga() {
